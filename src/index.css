@@ -1,0 +1,13 @@
+@import "components/chart/chart.css";
+@import "components/chartArea/chartArea.css";
+@import "components/header/header.css";
+@import "components/opener/opener.css";
+
+* {
+    font-family: Arial;
+    color: #32475B;
+}
+
+body {
+    margin: 0;
+}

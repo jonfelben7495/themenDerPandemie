@@ -1,0 +1,11 @@
+.chartArea {
+    text-align: center;
+    margin-top: 100px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chartArea_headline {
+    color: #32475B;
+}

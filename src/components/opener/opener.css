@@ -1,0 +1,17 @@
+.opener {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+.opener_headline {
+    font-size: 48px;
+    text-align: center;
+}
+
+.opener_sub {
+    font-size: 24px;
+    text-align: center;
+}

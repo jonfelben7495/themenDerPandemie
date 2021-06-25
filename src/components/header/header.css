@@ -1,0 +1,24 @@
+.header {
+    padding: 10px 16px;
+    background: #32475B;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header_link {
+    margin-right: 100px;
+    color: white;
+}
+
+.header_link1 {
+    margin-left: auto;
+}
+
+.header_link3 {
+    margin-right: 200px;
+}

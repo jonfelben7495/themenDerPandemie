@@ -1,0 +1,32 @@
+.line1 {
+    fill: none;
+    stroke: #32475B;
+    stroke-width: 3px;
+}
+
+.line2 {
+    fill: none;
+    stroke: #8baccc;
+    stroke-width: 3px;
+}
+
+.dot1 {
+    fill: #32475B;
+}
+
+.dot2 {
+    fill: #8baccc;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    height: 45px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
