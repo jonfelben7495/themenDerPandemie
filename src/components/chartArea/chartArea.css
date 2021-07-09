@@ -9,3 +9,15 @@
 .chartArea_headline {
     color: #32475B;
 }
+
+.chartArea_intro {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.chartArea_wf, .chartArea_tm {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: left;
+}

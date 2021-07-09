@@ -2,10 +2,14 @@
 @import "components/chartArea/chartArea.css";
 @import "components/header/header.css";
 @import "components/opener/opener.css";
+@import "components/intro/intro.css";
+@import "components/methodik/methodik.css";
+@import "components/results/results.css";
 
 * {
     font-family: Arial;
     color: #32475B;
+    scroll-margin-top: 80px;
 }
 
 body {

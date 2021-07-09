@@ -1,0 +1,13 @@
+.results {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+
+.results_intro {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 40px;
+}

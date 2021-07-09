@@ -1,0 +1,55 @@
+.methodik {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 200px;
+}
+
+.methodik_intro {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+.methodik_vergleich {
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+}
+
+.methodik_vergleich_1, .methodik_vergleich_2 {
+    flex: 1;
+}
+
+.methodik_vergleich_1 {
+    margin-right: 20px;
+}
+
+.methodik_vergleich_2 {
+    margin-left: 20px;
+}
+
+.methodik_vergleich_img {
+    background-color: #32475B;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.methodik_vergleich_img img {
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.methodik_vergleich_headline {
+    text-align: center;
+}
+
+.methodik_vergleich_text {
+    text-align: justify;
+}

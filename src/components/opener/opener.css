@@ -2,7 +2,7 @@
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
-    height: 100vh;
+    height: 75vh;
     padding-top: 25vh;
 }
 
@@ -14,4 +14,28 @@
 .opener_sub {
     font-size: 24px;
     text-align: center;
+}
+
+.opener_buttonline {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.opener_buttonlink {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.opener_buttonlink:last-of-type {
+    margin-right: 0;
+}
+
+.opener_button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #32475B;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
