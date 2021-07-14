@@ -1,6 +1,7 @@
 {
   "className": "chartArea1",
-  "headline": "Thema 1",
+  "semanticTopic": "Die Wissenschaft",
+  "ldaTopic": "Krankheitsverlauf und Behandlung",
   "intro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   "wortfeld": ["Begriff 1", "Begriff 2", "Begriff 3", "Begriff 4", "Begriff 5", "Begriff 6", "Begriff 7", "Begriff 8", "Begriff 9", "Begriff 10"],
   "topicModeling": ["Begriff 1", "Begriff 2", "Begriff 3", "Begriff 4", "Begriff 5", "Begriff 6", "Begriff 7", "Begriff 8", "Begriff 9", "Begriff 10"]
