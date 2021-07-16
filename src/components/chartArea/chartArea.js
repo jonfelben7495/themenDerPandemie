@@ -20,10 +20,15 @@ export const createChartArea = (chartObj, data1, data2, ldaTopicNr, semanticTopi
     chartTopicModeling.classList.add(chartObj.className + "_tm", "chartArea_tm")
     chartTopicModeling.innerHTML = "<b>Topic modeling:</b> " + chartObj.topicModeling.join(', ');
 
+    const chartCorrelation = document.createElement("p");
+    chartCorrelation.classList.add(chartObj.className + "_cor", "chartArea_cor")
+    chartCorrelation.innerHTML = "<b>Korrelation:</b> " + chartObj.correlation.toFixed(3);
+
     chartArea.appendChild(chartHeadline)
     chartArea.appendChild(chartIntro)
     chartArea.appendChild(chartWortfeld)
     chartArea.appendChild(chartTopicModeling)
+    chartArea.appendChild(chartCorrelation)
     document.body.appendChild(chartArea)
     createChart(data1, data2, "." + chartObj.className, ldaTopicNr, semanticTopic, chartObj)
 
