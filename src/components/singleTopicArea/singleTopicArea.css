@@ -1,0 +1,18 @@
+.singleTopicArea {
+    text-align: center;
+    margin-top: 100px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.singleTopicArea_button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #32475B;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

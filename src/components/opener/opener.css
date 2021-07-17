@@ -19,6 +19,7 @@
 .opener_buttonline {
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 70px;
 }
 
 .opener_buttonlink {
@@ -38,4 +39,9 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+}
+
+.opener_members {
+    text-align: center;
+    margin-bottom: 100px;
 }

@@ -14,14 +14,21 @@ export const createChart = (data1, data2, chartAreaClassName, ldaTopicNr, semant
     const y = d3.scaleLinear().range([height, 0]);
 
     // define the first line
-    const valueline1 = d3.line()
-        .x(function(d) { return x(d.date); })
-        .y(function(d) { return y(d[ldaTopicNr]); });
+    let valueline1;
+    if(ldaTopicNr !== null){
+        valueline1 = d3.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d[ldaTopicNr]); });
+    }
+
 
     // define the second line
-    const valueline2 = d3.line()
-        .x(function(d) { return x(d.date); })
-        .y(function(d) { return y(d[semanticTopic]); });
+    let valueline2;
+    if(semanticTopic !== null){
+        valueline2 = d3.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d[semanticTopic]); });
+    }
 
     // append the svg object to the chart area
     // appends a 'group' element to 'svg'
@@ -33,17 +40,26 @@ export const createChart = (data1, data2, chartAreaClassName, ldaTopicNr, semant
             "translate(" + margin.left + "," + margin.top + ")");
 
         // format the data
-    const fData1 = formatData(data1, ldaTopicNr)
-    const fData2 = formatData(data2, semanticTopic)
+    let fData1 = [], fData2 = [];
+    if (ldaTopicNr !== null) {
+        fData1 = formatData(data1, ldaTopicNr)
+    }
+    if (semanticTopic !== null) {
+        fData2 = formatData(data2, semanticTopic)
+    }
     const allData = fData1.concat(fData2)
 
         // Scale the range of the data
-        x.domain(d3.extent(fData1, function(d) { return d.date; }));
+        x.domain(d3.extent(allData, function(d) { return d.date; }));
         y.domain([0, d3.max(allData, function(d) { return d[ldaTopicNr] === undefined ? d[semanticTopic] : d[ldaTopicNr]; })]);
 
         // Add the valueline path.
-    addValueLine(fData1, valueline1, svg, "line1", ldaTopicNr)
-    addValueLine(fData2, valueline2, svg, "line2", semanticTopic)
+    if (ldaTopicNr !== null) {
+        addValueLine(fData1, valueline1, svg, "line1", ldaTopicNr)
+    }
+    if (semanticTopic !== null) {
+        addValueLine(fData2, valueline2, svg, "line2", semanticTopic)
+    }
 
     // Define the div for the tooltip
     const div = d3.select(chartAreaClassName).append("div")
@@ -51,8 +67,12 @@ export const createChart = (data1, data2, chartAreaClassName, ldaTopicNr, semant
         .style("opacity", 0);
 
     // Add the scatterplot
-    addScatterPlot(fData1, svg, "dot1", div, x, y, ldaTopicNr)
-    addScatterPlot(fData2, svg, "dot2", div, x, y, semanticTopic)
+    if (ldaTopicNr !== null) {
+        addScatterPlot(fData1, svg, "dot1", div, x, y, ldaTopicNr)
+    }
+    if (semanticTopic !== null) {
+        addScatterPlot(fData2, svg, "dot2", div, x, y, semanticTopic)
+    }
 
         // Add the X Axis
         svg.append("g")
@@ -64,10 +84,16 @@ export const createChart = (data1, data2, chartAreaClassName, ldaTopicNr, semant
             .call(d3.axisLeft(y));
 
     // Handmade legend
-    svg.append("circle").attr("cx",0).attr("cy",height + 50).attr("r", 6).attr("class", "dot1")
-    svg.append("circle").attr("cx",0).attr("cy",height + 80).attr("r", 6).attr("class", "dot2")
-    svg.append("text").attr("x", 20).attr("y", height + 55).text("LDA Topic '" + chartObj.ldaTopic + "'").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", 20).attr("y", height + 85).text("Wortfeld '" + chartObj.semanticTopic + "'").style("font-size", "15px").attr("alignment-baseline","middle")
+    if(chartObj.ldaTopic !== null) {
+        svg.append("circle").attr("cx", 0).attr("cy", height + 50).attr("r", 6).attr("class", "dot1")
+        svg.append("text").attr("x", 20).attr("y", height + 55).text("LDA Topic '" + chartObj.ldaTopic + "'").style("font-size", "15px").attr("alignment-baseline", "middle")
+    }
+
+    if(chartObj.semanticTopic !== null) {
+        svg.append("circle").attr("cx",0).attr("cy",height + 80).attr("r", 6).attr("class", "dot2")
+        svg.append("text").attr("x", 20).attr("y", height + 85).text("Wortfeld '" + chartObj.semanticTopic + "'").style("font-size", "15px").attr("alignment-baseline","middle")
+    }
+
 }
 
 const formatData = (data, topic) => {

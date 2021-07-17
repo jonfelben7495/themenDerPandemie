@@ -1,0 +1,32 @@
+export const createSingleTopicArea = () => {
+    const singleTopicArea = document.createElement("div");
+    singleTopicArea.classList.add("singleTopicArea")
+
+    const singleTopicAreaHeadline = document.createElement("h2");
+    singleTopicAreaHeadline.classList.add("singleTopicArea_headline");
+    singleTopicAreaHeadline.innerHTML = "Alle Topics in der Übersicht";
+    singleTopicArea.appendChild(singleTopicAreaHeadline);
+
+    const singleTopicAreaContent = document.createElement("div");
+    singleTopicAreaContent.classList.add("singleTopicArea_content");
+    singleTopicAreaContent.style.display = "none";
+
+    const singleTopicAreaButton = document.createElement("button")
+    singleTopicAreaButton.classList.add("singleTopicArea_button");
+    singleTopicAreaButton.innerHTML = "Anzeigen";
+    singleTopicAreaButton.onclick = function (){
+        if (singleTopicAreaContent.style.display === "none") {
+            singleTopicAreaContent.style.display = "block";
+            singleTopicAreaButton.innerHTML = "Verstecken"
+        } else {
+            singleTopicAreaContent.style.display = "none"
+            singleTopicAreaButton.innerHTML = "Anzeigen"
+        }
+    }
+
+    singleTopicArea.appendChild(singleTopicAreaButton)
+    singleTopicArea.appendChild(singleTopicAreaContent)
+
+    document.body.append(singleTopicArea)
+    return singleTopicAreaContent
+}

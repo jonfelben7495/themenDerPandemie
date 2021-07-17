@@ -15,7 +15,7 @@ export const createHeader = () => {
     const link3 = document.createElement("a")
     link3.classList.add("header_link", "header_link3")
     link3.innerHTML = "Repository";
-    link3.href = "https://github.com"
+    link3.href = "https://github.com/Tholke/topic-modeling-pandemie"
     link3.target = "_blank"
 
     header.appendChild(link1)

@@ -4,6 +4,6 @@
   "ldaTopic": "Politische und gesellschaftliche Debatte",
   "correlation": 0.41502975417724797,
   "intro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-  "wortfeld": ["Begriff 1", "Begriff 2", "Begriff 3", "Begriff 4", "Begriff 5", "Begriff 6", "Begriff 7", "Begriff 8", "Begriff 9", "Begriff 10"],
-  "topicModeling": ["Begriff 1", "Begriff 2", "Begriff 3", "Begriff 4", "Begriff 5", "Begriff 6", "Begriff 7", "Begriff 8", "Begriff 9", "Begriff 10"]
+  "wortfeld": ["Ministerpräsdientenkonferenz", "Osterruhe", "Corona-Verordnungen", "Infektionsschutzgesetz", "Gesundheitsamt", "Shutdown", "Impfpriorisierung", "Kontaktbeschränkungen", "Ausgangssperre", "Teststrategie", "Maskenpflicht", "Schulschließung", "Homeoffice", "Rückholaktion", "Reisewarnung", "Einreiseverbot", "Corona-Warn-App", "Immunitätsausweis", "Grenzwert", "Kontaktnachverfolgung", "Beherberungsverbot", "Intensivbetten", "Soforthilfen", "FFP-2-Masken", "Inzidenz", "7-Tage-Inzidenz", "Lockdown", "November-Lockdown", "Brücken-Lockdown", "AHAAL", "AHA", "Gesundheitsminister", "Mund-Nasen-Masken", "Remote-Unterricht"],
+  "topicModeling": ["fälle", "pandemie", "grippe", "kinder", "forschung", "behörden", "sagen", "überlegung", "fällen", "impfstoff", "kollegen", "wochen", "maske", "todesfälle", "masken", "italien", "kitas", "glaube", "passiert"]
 }

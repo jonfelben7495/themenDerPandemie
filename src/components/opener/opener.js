@@ -8,7 +8,7 @@ export const createOpener = () => {
 
     const openerSub = document.createElement("p");
     openerSub.classList.add("opener_sub");
-    openerSub.innerHTML = "Seit März 2020 bestimmt die Corona-Pandemie die mediale Berichterstattung. Dabei waren zu unterschiedlichen Zeitpunkten der Pandemie verschiedene Themen besonders wichtig. Doch zu welchem Zeitpunkt wurden welche Themen auffallend ausgiebig diskutiert? Dieser Frage sind wir im Rahmen einer Übung an der Universität zu Köln nachgegangen. Hier sind unsere Ergebnisse."
+    openerSub.innerHTML = "Seit März 2020 bestimmt die Corona-Pandemie die mediale Berichterstattung. Dabei waren zu unterschiedlichen Zeitpunkten der Pandemie verschiedene Themen besonders wichtig. Doch zu welchem Zeitpunkt wurden welche Themen auffallend ausgiebig diskutiert? Und wie können überhaupt Themen innerhalb von Texten identifiziert werden? Diesen Fragen sind wir im Rahmen einer Übung an der Universität zu Köln nachgegangen."
 
     const openerButtonLine = document.createElement("div");
     openerButtonLine.classList.add("opener_buttonline");
@@ -45,8 +45,28 @@ export const createOpener = () => {
     openerButtonLine.appendChild(buttonLink2);
     openerButtonLine.appendChild(buttonLink3);
 
+    const openerMembers = document.createElement("div");
+    openerMembers.classList.add("opener_members");
+    const memberHeadline = document.createElement("h3");
+    memberHeadline.innerHTML = "Projektmitglieder:"
+    const member1 = document.createElement("p");
+    member1.innerHTML = "Hauke Lindstädt (MA Linguistik)";
+    const member2 = document.createElement("p");
+    member2.innerHTML = "Tobias Nowak (MA Linguistik)";
+    const member3 = document.createElement("p");
+    member3.innerHTML = "Thomas Oehlke (MA Informationsverarbeitung)";
+    const member4 = document.createElement("p");
+    member4.innerHTML = "Jonas Schmidt (MA Informationsverarbeitung)";
+
+    openerMembers.appendChild(memberHeadline)
+    openerMembers.appendChild(member1)
+    openerMembers.appendChild(member2)
+    openerMembers.appendChild(member3)
+    openerMembers.appendChild(member4)
+
     opener.appendChild(openerHeadline);
     opener.appendChild(openerSub);
     opener.appendChild(openerButtonLine);
+    opener.appendChild(openerMembers)
     document.body.appendChild(opener)
 }

@@ -12,7 +12,7 @@ export const createMethodik = () => {
 
     const methodikIntro = document.createElement("p");
     methodikIntro.classList.add("methodik_intro");
-    methodikIntro.innerHTML = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    methodikIntro.innerHTML = "Für den Vergleich von subjektiven Wortfeldern und durch machine learning geschaffene Themenfeldern waren mehrere Schritte notwendig. Genutzt wurden die Skripts des Coronavirus-Update des NDR. Die Texte dieser Skripte wurden aus den öffentlich zugänglichen PDF-Dateien des NDR extrahiert und anschließend bereinigt. Währenddessen wurden Begriffe, die wir als wichtig für die Pandemie bzw. das Pandemiegeschehen erachten, gesammelt und in fünf verschiedene Themen eingeordnet. Daraufhin wurde für jede Folge des Podcasts ermittelt, in welchem Verhältnis die Themen in der jeweiligen Folge auftauchen. Als machine learning Algorithmus wurde Latent Dirichlet Allocation (LDA) genutzt. Hier wurden auch fünf Themenfelder generiert und ausgewertet in welchem Verhältnis diese in den Podcastfolgen auftreten. Zusätzlich wurde diesen Themen anhand der für jedes Thema wichtigsten Wörtern ein Label bzw. Titel gegeben. Um auszuwerten, ob die durch LDA erzeugten Themen Ähnlichkeiten zu den selbst erstellten Wortfeldern vorweisen, wurde die Pearson-Korrelation berechnet. Dieser Koeffizient wurde schließlich verwendet, um zu entscheiden, welche Themen in einer gemeinsamen Grafik auftauchen sollen."
 
     const methodikVergleich = document.createElement("div")
     methodikVergleich.classList.add("methodik_vergleich");
@@ -35,7 +35,7 @@ export const createMethodik = () => {
 
     const methodik1Text = document.createElement("p")
     methodik1Text.classList.add("methodik_vergleich_text")
-    methodik1Text.innerHTML = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+    methodik1Text.innerHTML = "Für die Wortfeldanalyse wurden Begriffe, die von uns als wichtig für die Pandemie angesehen wurden, gesammelt und in fünf Wortfelder eingeordnet. Anschließend wurde im Skript des Corona Updates gezählt, wie häufig die Begriffe jedes Wortfeldes vorkommen und schließlich das Verhältnis der Wortfelder in jeder Podcastfolge berechnet.";
     methodik1.appendChild(methodik1Text)
 
     const methodik2 = document.createElement("div");
@@ -56,7 +56,7 @@ export const createMethodik = () => {
 
     const methodik2Text = document.createElement("p")
     methodik2Text.classList.add("methodik_vergleich_text")
-    methodik2Text.innerHTML = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+    methodik2Text.innerHTML = "Es wurden fünf Themen durch LDA aus den Skripts der Corona Update-Folgen extrahiert. LDA erstellt hierfür fünf leere Themen und weist jedem Wort zu, zu wie viel Prozent dieses Wort zu diesen Themen gehört. Anschließend kann für jede Folge extrahiert werden, in welchem Verhältnis die Themen behandelt wurden. Da die durch LDA erstellten Themen keine Bezeichnungen besitzen, wurden diese händisch auf Basis der für ein Thema wichtigsten Begriffe benannt.";
     methodik2.appendChild(methodik2Text)
 
     methodikVergleich.appendChild(methodik1)

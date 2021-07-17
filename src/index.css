@@ -5,6 +5,7 @@
 @import "components/intro/intro.css";
 @import "components/methodik/methodik.css";
 @import "components/results/results.css";
+@import "components/singleTopicArea/singleTopicArea.css";
 
 * {
     font-family: Arial;
