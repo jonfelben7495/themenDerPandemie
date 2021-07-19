@@ -3,7 +3,7 @@
   "semanticTopic": "Das Virus",
   "ldaTopic": null,
   "correlation": null,
-  "intro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "intro": "Das letzte Wortfeld 'Das Virus' weist keine besondere Ähnlichkeit zu einem der LDA Topics auf. Obwohl es über den gesamten Zeitraum immer wieder relevant ist, hat sich hier keine Korrelation herauskristallisiert. Wie beim Thema 'Tests und Testen' gibt es hier auch wieder einige Hochpunkte, die sich wieder durch die Begriffe des Wortfeldes erklären lassen. Diese bestehen zum großen Teil aus Namen verschiedener Mutationen. Entsprechend liegen diese Hochpunkte bei Folgen, die sich mit der Virenmutation beschäftigen ('8: Viren mutieren immer', '47: Mutationen können auch Hoffnung geben'). ",
   "wortfeld": ["Mutationen", "Aerosole", "R-Wert", "Spike-Protein", "SARS-CoV-2", "Corona", "Zoonose", "Superspreader", "B.1.617", "Delta", "B.1.1.7", "Alpha", "P.1", "Gamma", "B.1.351", "Beta"],
   "topicModeling": null
 }

@@ -77,9 +77,10 @@ export const createChart = (data1, data2, chartAreaClassName, ldaTopicNr, semant
         // Add the X Axis
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x).ticks(6));
+            .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%B %y")).ticks(6));
 
         // Add the Y Axis
+        svg.append("g")
         svg.append("g")
             .call(d3.axisLeft(y));
 
