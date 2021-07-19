@@ -19,7 +19,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Development',
+            title: 'Die Themen der Pandemie',
         })
     ],
     output: {
